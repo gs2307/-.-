@@ -3,17 +3,43 @@
     <head>
         <title>bgb_카트라이더</title>
         <meta charset="utf-8">
-        <style>
-            h1 {
-                color:blue(163, 10, 112);
-                text-align: center;
-                font-size: 90px;
-
+        <link rel="stylesheet" href="style.css">
+        <script>
+            function a() {
+                alert("환영합니다")
+                location.href='main.html'
             }
-        </style>
+        </script>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>회원가입 페이지</title>
+        <link href="signup.css" rel="stylesheet">
+        
     </head>
     <body>
 <h1>bgb_카트라이더</h1>
-<h1 style="color: rgb(243, 128, 128); text-align: CENTER;">환영합니다.KRPL 유저님.</h1>
+<h1 style="color: rgb(0, 0, 0); text-align: CENTER;">
+
+    
+    <div class="wrapper">
+        <div class="title"><h1 style="font-size: 21px;">로그인</h1></div>
+        <div class="email">
+            <input id="email" type="text" placeholder="이메일을 입력해 주세요.">
+            <div id="emailError" class="error"></div>
+        </div>
+        <div class="password">
+            <input id="password" type="password" placeholder="비밀번호를 입력해 주세요.">
+            <div id="passwordError" class="error"></div>
+        </div>
+        <div class="signUp">
+            <div class="line">
+                <hr>
+            </div>
+            <div>
+                <button onclick="a()">로그인 하기</button>
+            </div>
+        </div>
+        <h2><a href="signup.html">회원가입</a></h2>
     </body>
     </html>
